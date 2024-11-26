@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+ <form>
+ <textarea cols="80" rows="20" readonly>
+	<!DOCTYPE html>
+	<head>
+	<title> proste obliczenia</title>
+	<meta charset="utf-8">
+	</head>
+	<body>
+	<div style="color:red;font-size:50px;">
+	<script language="JavaScript">
+	var liczba1=prompt("Podaj pierwszą liczbę","");
+	var liczba2=prompt("Podaj drugą liczbę","");
+	var a=parseFloat(liczba1);
+	var b=parseFloat(liczba2);
+	var c;
+	var d;
+	var e;
+	var f;
+	var g;
+	c=a*a*a
+	d=3*(a*a)*b
+	e=3*a*(b*b)
+	f=b*b*b
+	g=c+d+e+f
+	document.write("("+a+"+"+b+")"+"^3=");
+	document.write(a+"^3"+"+"+"3"+"*"+"("+"("+a+")"+"^2"+")"+"*"+"("+b+")"+"+"+"3"+"*"+"("+a+")"+"*"+"("+"("+b+")"+"^2"+")"+"*"+b+"^3"+"=");
+	document.write(""+c+"+"+d+"+"+e+"+"+f+"="+g);
+	</script>
+	</div>
+	</body>
+	</html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

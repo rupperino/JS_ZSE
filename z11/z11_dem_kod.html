@@ -1,0 +1,36 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+ <form>
+ <textarea cols="80" rows="20" readonly>
+	<!DOCTYPE html>
+	<head>
+	<title> proste obliczenia</title>
+	<meta charset="utf-8">
+	</head>
+	<body>
+	<div style="color:red;font-size:50px;">
+	<script language="JavaScript">
+	var D1_demc=prompt("D1=","");
+	var D2_demc=prompt("D2=","");
+	var minelo;
+	var d1=parseFloat(D1_demc);
+	var d2=parseFloat(D2_demc);
+	minelo=(d1-d2)*24*3600;
+	document.write(minelo);
+	</script>
+	</div>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

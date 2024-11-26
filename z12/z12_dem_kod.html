@@ -1,0 +1,37 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+ <form>
+ <textarea cols="80" rows="20" readonly>
+	<!DOCTYPE html>
+	<head>
+	<title> proste obliczenia</title>
+	<meta charset="utf-8">
+	</head>
+	<body>
+	<div style="color:red;font-size:50px;">
+	<script language="JavaScript">
+	var D1_demc=parseFloat(prompt("D1=",""));
+	var D2_demc=parseFloat(prompt("D2=",""));
+	var G1_demc=parseFloat(prompt("G1=",""));
+	var G2_demc=parseFloat(prompt("G2=",""));
+	var minelo;
+	ilosc_godzin = (D1_demc - D2_demc) * 24 + (G1_demc - G2_demc);
+	minelo = ilosc_godzin * 3600;
+	document.write(minelo);
+	</script>
+	</div>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

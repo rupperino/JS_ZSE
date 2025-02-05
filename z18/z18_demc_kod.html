@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <head>
+    <title> zad18 kod</title>
+    <meta charset="utf-8">
+    <style>
+      textarea {
+        color:rgb(102, 102, 102); 
+        font-size:15px; 
+        resize: none;
+        height: 90vh;
+        width: 90vw;
+      }
+    </style>
+  </head>
+  <body>
+<textarea readonly>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title> Użycie fukcji </title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <div style="color:navy;font-size:50px;">
+      <script>
+        let a = parseFloat(prompt("a=", ''));
+        let b = parseFloat(prompt("b=", ''));
+
+        function suma_dem(a, b) {
+          return a + b;
+        }
+
+        function diff_dem(a, b) {
+          return a - b;
+        }
+
+        function multi_dem(a, b) {
+          return a * b;
+        }
+
+        function square_dem(a, b) {
+          return `a^2 = ${a ** 2}, b^2 = ${b ** 2}`;
+        }
+
+        function remainder_dem(a, b) {
+          return a % b;
+        }
+
+        document.write("suma=" + suma_dem(a, b) + "<br>");
+        document.write("odejmowanie=" + diff_dem(a, b) + "<br>");
+        document.write("mnożenie=" + multi_dem(a, b) + "<br>");
+        document.write("do kwadratu=" + square_dem(a, b) + "<br>");
+        document.write("reszta z dzielenia=" + remainder_dem(a, b) + "<br>");
+      </script>
+    </div>
+  </body>
+</html>
+    </textarea>
+  </body>
+</html>

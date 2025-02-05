@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <head>
+    <title> proste obliczenia</title>
+    <meta charset="utf-8">
+    <style>
+      textarea {
+        color:rgb(102, 102, 102); 
+        font-size:15px; 
+        resize: none;
+        height: 90vh;
+        width: 90vw;
+      }
+    </style>
+  </head>
+  <body>
+<textarea readonly>
+  <html>
+
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  
+  <body>
+    <script>
+      function AB_dem() {
+        let aX_dem = parseFloat(document.getElementById('aX').value);
+        let aY_dem = parseFloat(document.getElementById('aY').value);
+  
+        let bX_dem = parseFloat(document.getElementById('bX').value);
+        let bY_dem = parseFloat(document.getElementById('bY').value);
+  
+  
+        document.getElementById("answer").innerHTML = "|AB|= "
+          + (Math.sqrt((aX_dem - bX_dem) ** 2 + (aY_dem - bY_dem) ** 2)).toFixed(2);
+      }
+  
+      function BC_dem() {
+        let bX_dem = parseFloat(document.getElementById('bX').value);
+        let bY_dem = parseFloat(document.getElementById('bY').value);
+  
+        let cX_dem = parseFloat(document.getElementById('cX').value);
+        let cY_dem = parseFloat(document.getElementById('cY').value);
+  
+        document.getElementById("answer").innerHTML = "|BC|= "
+          + (Math.sqrt((cX_dem - bX_dem) ** 2 + (cY_dem - bY_dem) ** 2)).toFixed(2);
+      }
+  
+      function AC_dem() {
+        let aX_dem = parseFloat(document.getElementById('aX').value);
+        let aY_dem = parseFloat(document.getElementById('aY').value);
+        let cX_dem = parseFloat(document.getElementById('cX').value);
+        let cY_dem = parseFloat(document.getElementById('cY').value);
+  
+        document.getElementById("answer").innerHTML = "|AC|= "
+          + (Math.sqrt((aX_dem - cX_dem) ** 2 + (aY_dem - cY_dem) ** 2)).toFixed(2);
+      }
+  
+    </script>
+  
+    Podaj X punktu A: <input type="text" id="aX"><br>
+    Podaj Y punktu A: <input type="text" id="aY"><br>
+    <br>
+    <br>
+    Podaj X punktu B: <input type="text" id="bX"><br>
+    Podaj Y punktu B: <input type="text" id="bY"><br>
+    <br>
+    <br>
+    Podaj X punktu C: <input type="text" id="cX"><br>
+    Podaj Y punktu C: <input type="text" id="cY"><br>
+    <br>
+    <br>
+  
+  
+    <input type="button" value="Oblicz AB" onclick="AB_dem()"><br>
+    <br>
+    <input type="button" value="Oblicz BC" onclick="BC_dem()"><br>
+    <br>
+    <input type="button" value="Oblicz AC" onclick="AC_dem()"><br>
+    <br>
+    <br>
+  
+    <div style="color:red;font-size:50px;" id="answer"></div>
+  </body>
+  
+  </html>
+    </textarea>
+  </body>
+</html>
